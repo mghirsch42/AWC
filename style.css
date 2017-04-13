@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    font-family: Georgia;
+}
+.jumbotron {
+    background-color: indigo;
+    color: white;
+}
+.jumbotron a {
+    text-decoration: none;
+    color: white;
+}
