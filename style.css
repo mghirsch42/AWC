@@ -1,11 +1,36 @@
-nav.primary ul,
-nav.primary ul li{
-    margin: 0px;
-} 
+.container {
+    margin: 20px;
+    text-align: center;
+}
 
-nav.primary ul li {
+#nav {
+    margin: 20px;
+}
+
+#nav ul li {
     display: inline;
-    float: left;
-    position: relative;
-    text-transform: uppercase;
+    margin: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover{
+    text-decoration: underline;
+}
+
+#headerImg {
+    margin: 20px;
+}
+
+#headerImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+#footer {
+    margin: 20px;
+    background-color: lightgray;
 }
