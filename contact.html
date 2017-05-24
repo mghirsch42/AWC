@@ -44,9 +44,9 @@
     <!-- Nav Bar -->
     <div id="nav">
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
             <li><a href="calendar.html">Calendar</a></li>
         </ul>
     </div> <!-- /nav -->
@@ -54,7 +54,33 @@
     <!-- Content -->
     <div id="content">
         
-        <p>The Association for Women in Computing aims to encourage gender equality in technological fields.</p>   
+        <h3>Send us an email!</h3>
+        
+        <form class="fv-form-horizontal" method="post">
+            <div class="row">
+                <label for="nameInput" class = "two columns">Name</label>
+                <div class="ten columns">
+                    <input type="text" id="nameInput" class="u-full-width"/>
+                </div>
+            </div>
+            <div class="row">
+                <label for="emailInput" class = "two columns">Email</label>
+                <div class="ten columns">
+                    <input type="email" id="emailInput" class="u-full-width"/>
+                </div>
+            </div>
+            <div class="row">
+                <label for="messsageInput" class="two columns">Message</label>
+                <div class="ten columns">
+                    <textarea id="messageInput" class="u-full-width"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Ask Us</button>
+        </form> 
+        
+        
+        
         
     </div> <!-- /content -->
     
