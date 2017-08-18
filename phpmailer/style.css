@@ -1,0 +1,45 @@
+.container {
+    margin: 20px;
+    text-align: center;
+    height:100%;
+}
+
+#nav {
+    margin: 20px;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover{
+    text-decoration: underline;
+}
+
+#nav li a.active{
+    font-weight: bold;
+}
+
+#headerImg {
+    margin: 20px;
+}
+
+#headerImg img {    
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    margin: 20px;
+    background-color: lightgray;
+}
+form {
+    margin: 20px;
+}

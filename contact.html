@@ -56,30 +56,31 @@
         
         <h3>Send us an email!</h3>
         
-        <form class="fv-form-horizontal" method="post">
+
+        
+        <form class="fv-form-horizontal" method="post" action="gmail.php">
             <div class="row">
                 <label for="nameInput" class = "two columns">Name</label>
                 <div class="ten columns">
-                    <input type="text" id="nameInput" class="u-full-width"/>
+                    <input type="text" id="nameInput" name="name" class="u-full-width"/>
                 </div>
+                
             </div>
             <div class="row">
                 <label for="emailInput" class = "two columns">Email</label>
                 <div class="ten columns">
-                    <input type="email" id="emailInput" class="u-full-width"/>
+                    <input type="email" id="emailInput" name="email" class="u-full-width"/>
                 </div>
             </div>
             <div class="row">
                 <label for="messsageInput" class="two columns">Message</label>
                 <div class="ten columns">
-                    <textarea id="messageInput" class="u-full-width"></textarea>
+                    <textarea id="messageInput" name="message" class="u-full-width"></textarea>
                 </div>
             </div>
             
             <button type="submit">Ask Us</button>
         </form> 
-        
-        
         
         
     </div> <!-- /content -->

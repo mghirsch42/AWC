@@ -8,14 +8,20 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'awc.ou.exec@gmail.com';                 // SMTP username
-$mail->Password = 'Virginie16';                           // SMTP password
-//$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Username = 'hirschmg42@gmail.com';                 // SMTP username
+$mail->Password = 'Aqf69438';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('awc.ou.exec@gmail.com', 'Mailer');
-$mail->addAddress('hirschmg42@gmail.com');     // Add a recipient               // Name is optional
+$mail->setFrom('hirschmg42@gmail.com', 'Mailer');
+$mail->addAddress('emsaxgee@gmail.com', 'Joe User');     // Add a recipient
+//$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->addReplyTo('info@example.com', 'Information');
+$mail->addCC('cc@example.com');
+$mail->addBCC('bcc@example.com');
 
+//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Here is the subject';
@@ -28,3 +34,6 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
+
+
+?>
