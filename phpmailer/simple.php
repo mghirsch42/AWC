@@ -1,20 +1,20 @@
 <?php
-require 'PHPMailerAutoload.php';
+require 'phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.awc.oucreate.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'hirschmg42@gmail.com';                 // SMTP username
-$mail->Password = 'Aqf69438';                           // SMTP password
+$mail->Username = 'default@awc.oucreate.com';                 // SMTP username
+$mail->Password = 'Boomsoonawc17';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('hirschmg42@gmail.com', 'Mailer');
-$mail->addAddress('emsaxgee@gmail.com', 'Joe User');     // Add a recipient
+$mail->setFrom('default@awc.oucreate.com', 'Mailer');
+$mail->addAddress('default@awc.oucreate.com', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('cc@example.com');
