@@ -15,22 +15,18 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'mail.awc.oucreate.com';  // Specify main and backup SMTP servers
+$mail->Host = 'EMAIL';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'default@awc.oucreate.com';                 // SMTP username
-$mail->Password = 'Boomsoonawc17';                           // SMTP password
+$mail->Username = 'EMAIL';                 // SMTP username
+$mail->Password = 'PASSWORD';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom($from_email, $from_name);
-$mail->addAddress('default@awc.oucreate.com', 'AWC Exec');     // Add a recipient
-//$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->addAddress('EMAIL', 'AWC Exec');     // Add a recipient
 $mail->addReplyTo($from_email, $from_name);
-$mail->addCC('awc@ou.edu');
-//$mail->addBCC('bcc@example.com');
+$mail->addCC('EMAIL');
 
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = "Contact from Website";
